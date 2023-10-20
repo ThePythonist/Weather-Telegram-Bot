@@ -30,6 +30,7 @@ def handle(msg):
             temp = get_weather_data(msg["text"])["temp"]
             hum = get_weather_data(msg["text"])["hum"]
             date = get_weather_data(msg["text"])["date"]
+            error = get_weather_data(msg["text"])["error"]
             reply = f"""
 City : {name}
 Date : {date}
