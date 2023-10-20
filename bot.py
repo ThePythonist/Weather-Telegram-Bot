@@ -1,8 +1,8 @@
 from flask import Flask, request
 import telepot
 import urllib3
-from Token import token
-from api import *
+from key import token
+from weather import *
 
 proxy_url = "http://proxy.server:3128"
 telepot.api._pools = {
